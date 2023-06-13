@@ -1,0 +1,101 @@
+.border-pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.left.anchor-pane,
+.right.anchor-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  border: 5px solid black;
+}
+
+.left.anchor-pane {
+
+  background-color: #263F73;
+}
+
+.ellipse {
+  align-self: center;
+  width: 96.2px;
+  height: 179.4px;
+  background-color: #f4f6f8;
+  border-radius: 50%;
+}
+
+.title-label,
+.user-login-label,
+.username-label,
+.password-label {
+  font-weight: bold;
+  text-align: center;
+}
+.error{
+  color: red;
+}
+.title-label {
+  font-size: 60px;
+  color: #eee8e8;
+}
+
+.user-login-label {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.username-label,
+.password-label {
+  font-size: 24px;
+
+  margin-right: 10px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+.username-input,
+.password-input {
+  display: block;
+
+  font-size: 24px;
+}
+
+.cancel-button,
+.login-button {
+  font-weight: bold;
+  font-size: 18.2px;
+  background-color: #263F73;
+  color: #f5f3f3;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+  margin-left:180px
+}
+
+.cancel-button {
+  margin-right: 26px;
+}
+
+.warning-error-label,
+.zone-id-label {
+  font-size: 18.2px;
+  text-align: center;
+}
+
+.warning-error-label {
+  color: #ff0606;
+}
+
+.zone-id-label {
+  font-weight: bold;
+}
+

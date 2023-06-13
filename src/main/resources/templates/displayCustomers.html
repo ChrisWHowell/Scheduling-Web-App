@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta th:name="_csrf" th:content="${_csrf.token}"/>
+    <meta th:name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+    <title>Chris Howell Capstone</title>
+    <link rel="stylesheet" th:href="@{/css/displayCustomerstyles.css}">
+    <!-- Add this line in the head section of your HTML file -->
+    <script th:src="@{/js/displayCustomers.js}"></script>
+
+
+</head>
+<body>
+<div class="titled-pane">
+    <h1>Customer Display</h1>
+    <div class="anchor-pane">
+        <div class="input-fields">
+            <div class = "form-row1">
+                <div>
+                    <label for="cb_Country">Country</label>
+                    <select id="cb_Country"></select>
+                </div>
+                <div>
+                    <label for="cb_state">State/Providence</label>
+                    <select id="cb_state"></select>
+                </div>
+                <div>
+                    <label for="tf_PostalC">Postal Code</label>
+                    <input type="text" id="tf_PostalC">
+                </div>
+
+            </div>
+            <div class = "form-row1">
+                <div>
+                    <label for="tf_Name">Name</label>
+                    <input type="text" id="tf_Name">
+                </div>
+                <div>
+                    <label for="tf_Address">Address</label>
+                    <input type="text" id="tf_Address">
+                </div>
+
+                <div>
+                    <label for="tf_Phone">Phone</label>
+                    <input type="text" id="tf_Phone">
+                </div>
+
+                <div class="custID-container">
+                    <label for="lb_custID">Customer ID</label>
+                    <span id="lb_custID">#</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="btn-group">
+            <button id="btn_Filter">Search By Filter</button>
+            <button id="btn_ResetFilter">Reset Filter</button>
+            <button id="bt_Delete">Delete Customer</button>
+            <button id="btn_SaveAsEdit">Save As Edit</button>
+            <button id="btn_SaveAsNew">Save As New</button>
+            <button id="btn_viewAppointments">View Appointments</button>
+            <button id="btn_viewReports">View Reports</button>
+
+        </div>
+        <table id="tv_CustomerList">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Postal Code</th>
+                <th>Division</th>
+                <th>Country</th>
+                <th>Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Add table rows with data here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", initPage);
+
+</script>
+</html>

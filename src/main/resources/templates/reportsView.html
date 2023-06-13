@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta th:name="_csrf" th:content="${_csrf.token}"/>
+    <meta th:name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/displayReports.css}">
+    <script th:src="@{/js/displayReports.js}"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header-div">
+        <h1>Chris Howell Capstone</h1>
+        <h1>Reports</h1>
+        <div class="buttons">
+            <button id="btn_GoToCustomers">Back to Customers</button>
+            <button id="btn_GoToAppointments">Back to Appointments</button>
+        </div>
+    </div>
+    <div class="tabs">
+        <input type="radio" name="monthlyTotal" id="tab_MonthlyTotal" checked>
+        <label for="tab_MonthlyTotal">Monthly Total</label>
+        <input type="radio" name="typeTotals" id="tab_TypeTotals">
+        <label for="tab_TypeTotals">Type Total</label>
+        <input type="radio" name="ContactSchedules" id="tab_ContactSchedules">
+        <label for="tab_ContactSchedules">Contacts Schedules</label>
+        <input type="radio" name="tab" id="tab_loginStats">
+        <label for="tab_loginStats">Login Stats</label>
+
+        <div class="tab-content" id="monthlyTotal" style="display: block;">
+            <!-- Monthly Total content -->
+            <table>
+                <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody id="monthTotalBody">
+                <!-- Add table rows here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-content" id="typeTotal" style="display: none;">
+            <!-- Type Total content -->
+            <table>
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody id="typeTotalBody">
+                <!-- Add table rows here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-content" id="contactSchedules" style="display: none;">
+            <div class="contact-group">
+                <label for="cb_contacts">Contacts:</label>
+                <select id="cb_contacts"></select>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Start Date Time</th>
+                    <th>End Date Time</th>
+                    <th>Customer ID</th>
+                </tr>
+                </thead>
+                <tbody id="contactScheduleBody">
+                <!-- Add table rows here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="tab-content" id="loginStats" style="display: none;">
+            <div>
+                <label for="dp_startDate">Analysis Start Date:</label>
+                <input type="date" id="dp_startDate">
+                <label for="dp_endDate">Analysis End Date:</label>
+                <input type="date" id="dp_endDate">
+                <button id="btn_reanalyse">Reanalyse</button>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Users</th>
+                    <th>Successful Logins</th>
+                    <th>Failed Logins</th>
+                    <th>Last Attempt Date and Time</th>
+                </tr>
+                </thead>
+                <tbody id="loginStatsTableBody">
+                <!-- Add table rows here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", initPage);
+
+</script>
+</html>

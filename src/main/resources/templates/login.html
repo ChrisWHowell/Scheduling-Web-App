@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Capstone</title>
+    <link rel="stylesheet" th:href="@{/css/loginstyles.css}">
+
+
+</head>
+<body>
+<div class="border-pane">
+    <div class="left anchor-pane">
+        <div class="title-label">
+            Capstone Web Scheduler
+        </div>
+
+        <div class="ellipse"></div>
+    </div>
+    <div class="right anchor-pane">
+        <div class = "error" th:if="${param.error}">
+            <p>Invalid username or password. Please try again.</p>
+        </div>
+        <div class="user-login-label">
+            User Login
+        </div>
+        <form th:action="@{/login}" method="post">
+            <div class="input-container">
+                <label for="tf_Username" class="username-label">Username</label>
+                <input id="tf_Username" class="username-input" type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="pf_Password" class="password-label">Password</label>
+                <input id="pf_Password" class="password-input" type="password" placeholder="Password" name="password" required>
+            </div>
+            <button id="btn_Login" class="login-button" type="submit">Login</button>
+        </form>
+
+        <div id="lb_warning_error" class="warning-error-label">
+        </div>
+        <div id="zoneIdLabel" class="zone-id-label">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

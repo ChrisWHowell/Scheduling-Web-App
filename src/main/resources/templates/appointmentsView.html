@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta th:name="_csrf" th:content="${_csrf.token}"/>
+    <meta th:name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/appointmentsView.css}">
+    <script th:src="@{/js/displayAppointmentView.js}"></script>
+    <title>Capstone</title>
+</head>
+<body>
+<div class="titled-pane">
+    <h1>Appointment View</h1>
+    <div class="anchor-pane">
+
+        <div class="input-fields">
+            <div class="form-row1">
+                <div class="appointID">
+                    <label for="appointment_id">Appointment ID</label>
+                    <span id="appointment_id">#</span>
+                </div>
+                <div class="customer_id_group">
+                    <label for="customer_id">Customer ID</label>
+                    <select id="customer_id"></select>
+                </div>
+                <div class = "userid-group">
+                    <label for="user_id">User ID</label>
+                    <select id="user_id"></select>
+                </div>
+                <div class="contact-group">
+                    <label for="contact">Contact</label>
+                    <select id="contact"></select>
+                </div>
+
+            </div>
+            <div class="form-row1">
+
+                <div class="title_group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class = "type-group">
+                    <label for="type">Type</label>
+                    <select id="type"></select>
+                </div>
+                <div class = "location-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location">
+                </div>
+            </div>
+            <div class ="description-group">
+                <label for="description">Description</label>
+                <input type="text" id="description">
+            </div>
+            <div class = "timendates">
+                <div class="form-row2a">
+                    <label for="start_date">Choose Start Date and Time:</label>
+                    <input type="datetime-local" id="start_date" name="start_date"
+                           value="2023-03-31T12:00">
+                </div>
+                <div class="form-row2b">
+                    <label for="end_date">Choose Start Date and Time:</label>
+                    <input type="datetime-local" id="end_date" name="end_date"
+                           value="2023-03-31T12:00">
+                </div>
+            </div>
+
+            <div class = "radio-buttons">
+                <div class = "radio1">
+                    <label for="all">All Appointments</label>
+                    <input type="radio" id="all" name="toggle" checked>
+                </div>
+                <div class = "radio2">
+                    <label for="month">Appointments this Month</label>
+                    <input type="radio" id="month" name="toggle">
+                </div>
+                <div class = "radio3">
+                    <label for="week">Appointments this Week</label>
+                    <input type="radio" id="week" name="toggle">
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" id="btn_ClearInputs">Clear Inputs</button>
+            <button type="button" id="btn_SaveAsNew">Save As New</button>
+            <button type="button" id="btn_SaveAsEdit" >Save As Edit</button>
+            <button type="button" id="bt_Delete">Delete Appointment</button>
+            <button type="button" id="btn_viewCustomer">View Customer Data</button>
+        </div>
+
+
+        <table>
+            <thead>
+            <tr>
+                <th>Appointment ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Contact</th>
+                <th>Type</th>
+                <th>Start Date And Time</th>
+                <th>End Date And Time</th>
+                <th>Customer Id</th>
+                <th>User ID</th>
+            </tr>
+            </thead>
+            <tbody id="appointmentTableBody">
+            <!-- Add table rows with data here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", initPage);
+
+</script>
+</html>

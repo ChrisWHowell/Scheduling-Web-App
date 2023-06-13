@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.header-div{
+ position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 10%;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tabs {
+
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-top: 100px; /* Adjust as needed */
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+input[type="radio"]:checked
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  overflow-y: auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
