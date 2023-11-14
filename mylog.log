@@ -1,13 +1,215 @@
-2023-04-22T14:04:46.465-04:00  INFO 16816 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 16816 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
-2023-04-22T14:04:46.474-04:00  INFO 16816 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
-2023-04-22T14:04:47.421-04:00  INFO 16816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-04-22T14:04:47.430-04:00  INFO 16816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-04-22T14:04:47.431-04:00  INFO 16816 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-04-22T14:04:47.518-04:00  INFO 16816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-04-22T14:04:47.518-04:00  INFO 16816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1001 ms
-2023-04-22T14:04:47.858-04:00  INFO 16816 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2db33feb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30c3ae63, org.springframework.security.web.context.SecurityContextHolderFilter@3e36b7a0, org.springframework.security.web.header.HeaderWriterFilter@7c1447b5, org.springframework.security.web.csrf.CsrfFilter@2b0e9f30, org.springframework.security.web.authentication.logout.LogoutFilter@2dbfcf7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2db1b657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f5cf29b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c66b7d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58658f63, org.springframework.security.web.access.ExceptionTranslationFilter@73c3cd09, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1835dc92]
-2023-04-22T14:04:48.009-04:00  INFO 16816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-04-22T14:04:48.016-04:00  INFO 16816 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.908 seconds (process running for 3.45)
-2023-04-22T14:04:55.622-04:00  INFO 16816 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-22T14:04:55.622-04:00  INFO 16816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-04-22T14:04:55.623-04:00  INFO 16816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-14T11:41:20.376-05:00  INFO 3568 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 3568 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T11:41:20.384-05:00  INFO 3568 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T11:41:21.128-05:00  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T11:41:21.135-05:00  INFO 3568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T11:41:21.135-05:00  INFO 3568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T11:41:21.203-05:00  INFO 3568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T11:41:21.203-05:00  INFO 3568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 785 ms
+2023-11-14T11:41:21.476-05:00  INFO 3568 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3ba3d4b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51b77cdf, org.springframework.security.web.context.SecurityContextHolderFilter@4d0e54e0, org.springframework.security.web.header.HeaderWriterFilter@b3e86d5, org.springframework.security.web.csrf.CsrfFilter@7316523a, org.springframework.security.web.authentication.logout.LogoutFilter@72bdd7c7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40de8f93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@611640f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67e25252, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@441fbe89, org.springframework.security.web.access.ExceptionTranslationFilter@228bda54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30ec7d21]
+2023-11-14T11:41:21.591-05:00  INFO 3568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T11:41:21.598-05:00  INFO 3568 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.545 seconds (process running for 1.813)
+2023-11-14T11:45:22.318-05:00  INFO 3568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-14T11:45:22.318-05:00  INFO 3568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-14T11:45:22.319-05:00  INFO 3568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-14T11:45:31.348-05:00 ERROR 3568 --- [http-nio-8080-exec-6] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connect" is null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:109) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connect" is null
+	at com.Scheduling.Web.App.repository.JDBCUserRepository.getUserEntityByName(JDBCUserRepository.java:21) ~[classes/:na]
+	at com.Scheduling.Web.App.services.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:30) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:94) ~[spring-security-core-6.0.2.jar:6.0.2]
+	... 60 common frames omitted
+
+2023-11-14T11:46:52.052-05:00  INFO 25416 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 25416 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T11:46:52.054-05:00  INFO 25416 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T11:46:52.798-05:00  INFO 25416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T11:46:52.804-05:00  INFO 25416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T11:46:52.805-05:00  INFO 25416 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T11:46:52.873-05:00  INFO 25416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T11:46:52.873-05:00  INFO 25416 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2023-11-14T11:46:53.139-05:00  INFO 25416 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58658f63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54e12f4c, org.springframework.security.web.context.SecurityContextHolderFilter@f5cf29b, org.springframework.security.web.header.HeaderWriterFilter@24a2e565, org.springframework.security.web.csrf.CsrfFilter@3330f3ad, org.springframework.security.web.authentication.logout.LogoutFilter@38cedb7d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43c57161, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37e69c43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c7dfc05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60990e5c, org.springframework.security.web.access.ExceptionTranslationFilter@7c1447b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65a9ea3c]
+2023-11-14T11:46:53.259-05:00  INFO 25416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T11:46:53.265-05:00  INFO 25416 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.528 seconds (process running for 1.784)
+2023-11-14T11:47:03.395-05:00  INFO 25416 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-14T11:47:03.395-05:00  INFO 25416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-14T11:47:03.396-05:00  INFO 25416 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-14T11:47:50.657-05:00  INFO 15336 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 15336 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T11:47:50.659-05:00  INFO 15336 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T11:47:51.459-05:00  INFO 15336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T11:47:51.467-05:00  INFO 15336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T11:47:51.467-05:00  INFO 15336 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T11:47:51.534-05:00  INFO 15336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T11:47:51.534-05:00  INFO 15336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms
+2023-11-14T11:47:51.805-05:00  INFO 15336 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b88b8e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58253c57, org.springframework.security.web.context.SecurityContextHolderFilter@56476c16, org.springframework.security.web.header.HeaderWriterFilter@777d0bc3, org.springframework.security.web.csrf.CsrfFilter@73c3cd09, org.springframework.security.web.authentication.logout.LogoutFilter@1e4c6583, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cb702ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39ffda4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ba348ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b73433, org.springframework.security.web.access.ExceptionTranslationFilter@6e0e5dec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c6b4ed7]
+2023-11-14T11:47:51.929-05:00  INFO 15336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T11:47:51.935-05:00  INFO 15336 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.587 seconds (process running for 1.836)
+2023-11-14T11:47:55.491-05:00  INFO 15336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-14T11:47:55.492-05:00  INFO 15336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-14T11:47:55.492-05:00  INFO 15336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-14T11:48:01.764-05:00 ERROR 15336 --- [http-nio-8080-exec-4] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connect" is null
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:109) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:85) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:231) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:131) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.2.jar:6.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.6.jar:6.0.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.5.jar:10.1.5]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "connect" is null
+	at com.Scheduling.Web.App.repository.JDBCUserRepository.getUserEntityByName(JDBCUserRepository.java:21) ~[classes/:na]
+	at com.Scheduling.Web.App.services.UserDetailsServiceImpl.loadUserByUsername(UserDetailsServiceImpl.java:30) ~[classes/:na]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:94) ~[spring-security-core-6.0.2.jar:6.0.2]
+	... 60 common frames omitted
+
+2023-11-14T11:49:40.261-05:00  INFO 26824 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 26824 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T11:49:40.263-05:00  INFO 26824 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T11:49:41.019-05:00  INFO 26824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T11:49:41.026-05:00  INFO 26824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T11:49:41.026-05:00  INFO 26824 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T11:49:41.091-05:00  INFO 26824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T11:49:41.091-05:00  INFO 26824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2023-11-14T11:49:41.364-05:00  INFO 26824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@315105f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b61bf11, org.springframework.security.web.context.SecurityContextHolderFilter@2ee48610, org.springframework.security.web.header.HeaderWriterFilter@64dae3b7, org.springframework.security.web.csrf.CsrfFilter@39ffda4a, org.springframework.security.web.authentication.logout.LogoutFilter@3625a016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1bf14704, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d08b4e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1015a4b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40247d48, org.springframework.security.web.access.ExceptionTranslationFilter@1b13467c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64c781a9]
+2023-11-14T11:49:41.486-05:00  INFO 26824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T11:49:41.492-05:00  INFO 26824 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.541 seconds (process running for 1.802)
+2023-11-14T11:49:45.119-05:00  INFO 26824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-14T11:49:45.119-05:00  INFO 26824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-14T11:49:45.120-05:00  INFO 26824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-14T11:51:28.980-05:00  INFO 10168 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 10168 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T11:51:28.982-05:00  INFO 10168 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T11:51:29.725-05:00  INFO 10168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T11:51:29.732-05:00  INFO 10168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T11:51:29.733-05:00  INFO 10168 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T11:51:29.800-05:00  INFO 10168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T11:51:29.800-05:00  INFO 10168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2023-11-14T11:51:30.068-05:00  INFO 10168 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e351d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43c57161, org.springframework.security.web.context.SecurityContextHolderFilter@7c1447b5, org.springframework.security.web.header.HeaderWriterFilter@74f827ad, org.springframework.security.web.csrf.CsrfFilter@3138953b, org.springframework.security.web.authentication.logout.LogoutFilter@3ba348ca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65a9ea3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24a2e565, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e36b7a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d902300, org.springframework.security.web.access.ExceptionTranslationFilter@4a2e7bcb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@748ac6f3]
+2023-11-14T11:51:30.198-05:00  INFO 10168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T11:51:30.204-05:00  INFO 10168 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.53 seconds (process running for 1.774)
+2023-11-14T11:51:46.141-05:00  INFO 10168 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-14T11:51:46.141-05:00  INFO 10168 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-14T11:51:46.142-05:00  INFO 10168 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-14T12:11:55.159-05:00  INFO 26460 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Starting SchedulingWebAppApplication using Java 19.0.1 with PID 26460 (C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App\target\classes started by cwhow in C:\Users\cwhow\Desktop\Scheduling Web App\Scheduling-Web-App)
+2023-11-14T12:11:55.160-05:00  INFO 26460 --- [main] c.S.Web.App.SchedulingWebAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-11-14T12:11:55.899-05:00  INFO 26460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-14T12:11:55.907-05:00  INFO 26460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-14T12:11:55.908-05:00  INFO 26460 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-11-14T12:11:55.976-05:00  INFO 26460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-14T12:11:55.977-05:00  INFO 26460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2023-11-14T12:11:56.253-05:00  INFO 26460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@111d5c97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29c17c3d, org.springframework.security.web.context.SecurityContextHolderFilter@5b5ac798, org.springframework.security.web.header.HeaderWriterFilter@33a55bd8, org.springframework.security.web.csrf.CsrfFilter@1b13467c, org.springframework.security.web.authentication.logout.LogoutFilter@21a9a705, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6413d7e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7668892a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a83495d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@250a9031, org.springframework.security.web.access.ExceptionTranslationFilter@784223e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@493da830]
+2023-11-14T12:11:56.376-05:00  INFO 26460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-14T12:11:56.382-05:00  INFO 26460 --- [main] c.S.Web.App.SchedulingWebAppApplication  : Started SchedulingWebAppApplication in 1.531 seconds (process running for 1.783)

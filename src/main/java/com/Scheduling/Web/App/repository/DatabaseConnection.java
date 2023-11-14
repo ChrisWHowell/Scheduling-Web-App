@@ -19,7 +19,8 @@ public class DatabaseConnection {
 
         String dbName = "client_schedule";
         String dbUser = "root";
-        String dbPassword = "MSLMo_Disk_21";
+        String dbPassword = System.getenv("DB_PASSWORD");
+
         String url = "jdbc:mysql://localhost:3306/" + dbName;
         Connection dblink = null;
         try{
